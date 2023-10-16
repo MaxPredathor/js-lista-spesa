@@ -1,7 +1,7 @@
 const btn = document.querySelector('button');
 const inputEl = document.getElementById('data');
 const resultEl = document.querySelector('.alert');
-const item = document.createElement('p');
+
 
 
 const listaSpesa = [];
@@ -21,10 +21,9 @@ i++;
 }
 console.log(listaSpesa);
 
-for(let x = 1; x <= listaSpesa.length; x++){
+for(let x = 0; x < listaSpesa.length; x++){
+    let item = document.createElement('p');
     let msg = listaSpesa[x];
-    // document.getElementById('my-div').append(item);
-    // item.innerHTML = msg;
-    console.log(msg);
+    item.innerHTML = `${msg}`;
+    resultEl.append(item);
 }
-// resultEl.remove('d-none');
