@@ -22,7 +22,7 @@ i++;
 console.log(listaSpesa);
 
 for(let x = 0; x < listaSpesa.length; x++){
-    let item = document.createElement('p');
+    let item = document.createElement('li');
     let msg = listaSpesa[x];
     item.innerHTML = `${msg}`;
     resultEl.append(item);
